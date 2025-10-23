@@ -1,0 +1,29 @@
+:root {
+    --primary-accent-color: #38a169;
+    --background-color: #f7f5ef;
+    --highlight-color: #fa8072;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(250, 128, 114, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(250, 128, 114, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(250, 128, 114, 0.4);
+    }
+}
+
+.breathing-icon {
+    animation: breathing 3s ease-in-out infinite;
+}
